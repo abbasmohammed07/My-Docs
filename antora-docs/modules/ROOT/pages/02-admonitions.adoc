@@ -1,0 +1,47 @@
+---
+title: "Admonitions and Delimited Blocks"
+date: 2026-11-14
+author: "Tech Writer"
+tags: ["asciidoc", "blocks", "callouts"]
+---
+
+= Admonitions and Delimited Blocks
+:icons: font
+
+== Admonition Paragraphs
+
+Admonitions draw the reader's attention to important notes, tips, or warnings.
+
+NOTE: Static site generators often require an AsciiDoc processor like Asciidoctor to render these blocks properly.
+
+TIP: Keep your source files modular so you can reuse content across multiple pages.
+
+IMPORTANT: Always validate your front matter YAML before pushing to your repository.
+
+WARNING: Deleting the build output directory manually while the dev server is running may cause temporary errors.
+
+CAUTION: Force pushing (`git push --force`) to the main branch can overwrite deployment history.
+
+== Sidebar Block
+
+.About Static Site Generators
+****
+A static site generator (SSG) takes source files—such as AsciiDoc or Markdown—and compiles them into pure HTML, CSS, and JavaScript files ready for fast hosting on GitHub Pages.
+****
+
+== Example Block
+
+.Sample Configuration Structure
+====
+An example block frames content cleanly to separate demonstrations from narrative prose.
+
+* `antora.yml` defines component metadata.
+* `modules/ROOT/pages/` stores the `.adoc` or `.md` source files.
+====
+
+== Quote Block
+
+[quote, Donald Knuth, Literate Programming]
+____
+Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
+____

@@ -1,0 +1,6 @@
+name: practice-docs
+title: AsciiDoc Practice Guide
+version: '1.0'
+start_page: 01-index.adoc
+nav:
+  - modules/ROOT/nav.adoc

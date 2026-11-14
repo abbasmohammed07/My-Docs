@@ -1,0 +1,38 @@
+---
+title: "Includes, Cross-References, and Git Workflow"
+date: 2026-11-14
+author: "Tech Writer"
+tags: ["asciidoc", "xref", "git"]
+---
+
+= Includes, Cross-References, and Git Workflow
+
+== Cross-References (xref)
+
+Cross-references link sections within the same document or across different pages in a multi-page site.
+
+* Internal anchor reference: See <<_git_push_checklist>> below.
+* Cross-page reference syntax: `xref:01-getting-started.md[Getting Started Guide]`
+
+== Include Directives
+
+The `include::` directive pulls content from external files into the current document during compilation.
+
+[source,asciidoc]
+----
+== Reusable Snippet
+
+include::partials/disclaimer.adoc[]
+----
+
+NOTE: Note that the `.md` file extension is used here per your request, though standard AsciiDoc processors typically look for `.adoc` files unless configured otherwise.
+
+[[_git_push_checklist]]
+== Git Push Checklist
+
+Follow these steps to push your practice files to GitHub:
+
+. Initialize a local repository using `git init`.
+. Stage your files with `git add .`.
+. Commit your changes with `git commit -m "Add AsciiDoc practice files"`.
+. Add your remote repository and run `git push -u origin main`.

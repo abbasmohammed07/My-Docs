@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: AsciiDoc Practice Site</title>
+    <meta name="generator" content="Antora 3.2.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">AsciiDoc Practice Site</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="practice-docs" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="01-index.html">AsciiDoc Practice Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="01-index.html">Getting started</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="02-admonitions.html">Admonitions &amp; Blocks</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="03-code-callouts.html">Code &amp; Callouts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="04-tables-attributes.html">Tables &amp; Attributes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="05-includes-references.html">Includes &amp; Cross-References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Practice Guide</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="01-index.html">AsciiDoc Practice Guide</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="01-index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="01-index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="01-index.html">AsciiDoc Practice Guide</a></li>
+    <li><a href="03-code-callouts.html">Code &amp; Callouts</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="https://github.com/abbasmohammed07/My-Docs/edit/main/antora-docs/modules/ROOT/pages/03-code-callouts.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<hr>
+<div class="paragraph">
+<p>title: "Source Code Blocks and Callouts"
+date: 2026-11-14
+author: "Tech Writer"
+tags: ["asciidoc", "code", "github"]
+---</p>
+</div>
+<h1 id="_source_code_blocks_and_callouts" class="sect0"><a class="anchor" href="#_source_code_blocks_and_callouts"></a>Source Code Blocks and Callouts</h1>
+<div class="sect1">
+<h2 id="_inline_code_and_shell_commands"><a class="anchor" href="#_inline_code_and_shell_commands"></a>Inline Code and Shell Commands</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run <code>asciidoctor index.adoc</code> in your terminal to compile a single file into HTML.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syntax_highlighted_source_blocks"><a class="anchor" href="#_syntax_highlighted_source_blocks"></a>Syntax-Highlighted Source Blocks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AsciiDoc supports language-specific syntax highlighting using the <code>[source,&lt;language&gt;]</code> block attribute.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">def generate_site(pages):
+    for page in pages:
+        print(f"Building {page}...") <i class="conum" data-value="1"></i><b>(1)</b>
+    return True <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Iterates through each source file in the queue.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Signals successful completion of the static build.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_yaml_configuration_example"><a class="anchor" href="#_yaml_configuration_example"></a>YAML Configuration Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Below is a sample GitHub Actions workflow snippet for building static documentation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: Deploy Docs
+on:
+  push:
+    branches: [ main ] <i class="conum" data-value="1"></i><b>(1)</b>
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 <i class="conum" data-value="2"></i><b>(2)</b>
+      - name: Build Site
+        run: echo "Compiling AsciiDoc files..."</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Triggers the workflow automatically whenever commits are pushed to <code>main</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Checks out the repository code onto the runner.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

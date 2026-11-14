@@ -1,0 +1,13 @@
+site:
+  title: AsciiDoc Practice Site
+  start_page: practice-docs::index.adoc
+content:
+  sources:
+    - url: .
+      branches: HEAD
+ui:
+  bundle:
+    url: https://gitlab.com
+    snapshot: true
+output:
+  dir: build/site

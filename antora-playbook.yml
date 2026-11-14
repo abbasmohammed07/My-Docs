@@ -7,8 +7,8 @@ content:
       branches: HEAD
       start_path: antora-docs
 ui:
-  bundle:
-    url: https://gitlab.com
+bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
 output:
   dir: build/site

@@ -1,13 +1,14 @@
----
-title: "Getting Started with AsciiDoc"
-date: 2026-11-14
-author: "Tech Writer"
-tags: ["asciidoc", "documentation", "basics"]
----
+---------
+Title: "Getting Started with AsciiDoc"
+Date: 2026-11-14
+Author: "Tech Writer"
+Tags: ["asciidoc", "documentation", "basics"]
+---------
 
 = Getting Started with AsciiDoc
 Tech Writer <writer@example.com>
 v1.0, 2026-11-14
+
 :toc:
 :icons: font
 
